@@ -1,10 +1,12 @@
 {
   "name": "fatigue-deg-generator",
   "version": "0.1.0",
+  "homepage": "https://MaruTama.github.io/fatigue-deg-generator"
   "private": true,
   "dependencies": {
     "json-loader": "^0.5.7",
     "material-ui": "^0.20.0",
+    "material-ui-slider-label": "git+https://github.com/tariqwest/material-ui-slider-label.git",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -15,5 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "create-react-class": "^15.6.2"
   }
 }

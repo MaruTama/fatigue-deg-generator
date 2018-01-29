@@ -8,6 +8,9 @@ npm install material-ui
 npm i json-loader --save
 #型の指定のため
 npm i prop-types --save
+npm i create-react-class --save
+#material designのslider
+npm install https://github.com/tariqwest/material-ui-slider-label.git
 # 起動
 npm start
 
