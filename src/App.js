@@ -178,7 +178,7 @@ var TweetTextField = createReactClass({
             matalName: '鉛',
             sentence : '重い',
             tweetText: '鉛のように身体が重い',
-            link     : "https://twitter.com/intent/tweet?text=鉛のように身体が重い%0a&url=https://www.url.url/&hashtags=金属疲労パラメーター,鉛"
+            link     : "https://twitter.com/intent/tweet?text=鉛のように身体が重い%0a&url=https://marutama.github.io/fatigue-deg-generator/&hashtags=金属疲労パラメーター,鉛"
         };
     },
     _handleTextFieldChange: function(e) {
@@ -216,7 +216,7 @@ var TweetTextField = createReactClass({
       console.log(text);
       this.setState({
           tweetText: text,
-          link     : "https://twitter.com/intent/tweet?text=" + text + "%0a&url=https://www.url.url/&hashtags=金属疲労パラメーター," + matalName
+          link     : "https://twitter.com/intent/tweet?text=" + text + "%0a&url=https://marutama.github.io/fatigue-deg-generator/&hashtags=金属疲労パラメーター," + matalName
       });
     },
     render: function() {

@@ -1,7 +1,7 @@
 {
   "name": "fatigue-deg-generator",
   "version": "0.1.0",
-  "homepage": "https://MaruTama.github.io/fatigue-deg-generator"
+  "homepage": "https://MaruTama.github.io/fatigue-deg-generator",
   "private": true,
   "dependencies": {
     "json-loader": "^0.5.7",
@@ -16,9 +16,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "devDependencies": {
-    "create-react-class": "^15.6.2"
+    "create-react-class": "^15.6.2",
+    "gh-pages": "^1.1.0",
+    "webpack": "^3.10.0"
   }
 }
