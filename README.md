@@ -1,3 +1,7 @@
+# 作成したサイト  
+[金属疲労ジェネレーター](https://marutama.github.io/fatigue-deg-generator/)
+
+# Note
 ```:sh
 # テンプレートの作成
 npm install -g create-react-app
