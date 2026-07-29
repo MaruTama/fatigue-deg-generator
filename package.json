@@ -1,27 +1,31 @@
 {
   "name": "fatigue-deg-generator",
-  "version": "0.1.0",
-  "homepage": "https://MaruTama.github.io/fatigue-deg-generator",
+  "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "json-loader": "^0.5.7",
-    "material-ui": "^0.20.0",
-    "material-ui-slider-label": "git+https://github.com/tariqwest/material-ui-slider-label.git",
-    "prop-types": "^15.6.1",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-scripts": "1.1.0"
-  },
+  "type": "module",
+  "homepage": "https://marutama.github.io/fatigue-deg-generator/",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "deploy": "npm run build && gh-pages -d build"
+    "dev": "vite",
+    "start": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
   },
   "devDependencies": {
-    "create-react-class": "^15.6.3",
-    "gh-pages": "^1.1.0",
-    "webpack": "^3.11.0"
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.1",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "jsdom": "^27.0.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.4",
+    "vitest": "^4.0.15"
   }
 }

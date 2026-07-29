@@ -1,0 +1,46 @@
+:root {
+  color: #18202a;
+  background: #eef1f4;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input, textarea { font: inherit; }
+
+.page-shell { min-height: 100vh; padding: clamp(24px, 5vw, 72px) 20px 28px; background: radial-gradient(circle at 15% 2%, #fff 0 10%, transparent 36%), linear-gradient(145deg, #eef1f4, #dce2e8); }
+.generator { width: min(100%, 720px); margin: 0 auto; padding: clamp(24px, 5vw, 52px); border: 1px solid rgba(255,255,255,.9); border-radius: 28px; background: rgba(255,255,255,.86); box-shadow: 0 24px 60px rgba(34, 45, 57, .14); }
+.hero { display: flex; align-items: center; gap: 16px; }
+.hero-mark { width: 52px; height: 52px; padding: 9px; border-radius: 16px; background: #18202a; }
+.eyebrow, .result-label { margin: 0; color: #637181; font-weight: 750; font-size: .7rem; letter-spacing: .1em; }
+h1 { margin: 4px 0 0; font-size: clamp(1.7rem, 5vw, 2.45rem); letter-spacing: -.04em; }
+.intro { margin: 32px 0 24px; color: #4b5865; line-height: 1.85; }
+.result-card { display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: center; padding: 24px; border-radius: 20px; color: #fff; background: linear-gradient(135deg, #263442, #151c24); }
+.symbol-tile { display: grid; width: 82px; aspect-ratio: 1; place-items: center; border: 1px solid rgba(255,255,255,.24); border-radius: 18px; background: linear-gradient(145deg, #657789, #354654); font-size: 2rem; font-weight: 800; letter-spacing: -.05em; }
+.result-card h2 { margin: 3px 0 16px; font-size: 1.7rem; }
+.result-card .result-label { color: #b9c5ce; }
+.metrics { display: flex; gap: clamp(20px, 8vw, 60px); margin: 0; }
+.metrics div { display: grid; gap: 3px; }
+.metrics dt { color: #b9c5ce; font-size: .75rem; }
+.metrics dd { margin: 0; font-size: 1.15rem; font-weight: 750; }
+.metrics span { margin-left: 2px; font-size: .72rem; font-weight: 500; }
+.control-section { margin-top: 32px; }
+.control-heading { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; font-weight: 750; }
+.control-heading output { padding: 4px 9px; border-radius: 8px; color: #526170; background: #e8edf1; font-size: .86rem; }
+input[type="range"] { width: 100%; height: 28px; margin: 0; accent-color: #197d93; cursor: pointer; }
+.range-limits { display: flex; justify-content: space-between; margin-top: 3px; color: #667583; font-size: .75rem; }
+.feeling-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 30px 0 0; padding: 0; border: 0; }
+.feeling-options legend { grid-column: 1 / -1; margin-bottom: 8px; font-weight: 750; }
+.feeling-options label { display: flex; align-items: center; gap: 9px; min-height: 48px; padding: 12px; border: 1px solid #d8e0e6; border-radius: 12px; color: #34414e; cursor: pointer; }
+.feeling-options label:has(input:checked) { border-color: #197d93; color: #09576a; background: #edf8fa; }
+.feeling-options input { width: 1.1rem; height: 1.1rem; accent-color: #197d93; }
+.share-section { display: grid; gap: 10px; margin-top: 30px; }
+.share-section > label { font-weight: 750; }
+textarea { width: 100%; resize: vertical; padding: 13px; border: 1px solid #d2dbe2; border-radius: 12px; color: #24313d; background: #fafcfd; line-height: 1.5; }
+.share-button { display: flex; justify-content: center; align-items: center; min-height: 50px; border-radius: 12px; color: #fff; background: #18202a; font-weight: 750; text-decoration: none; transition: background .2s, transform .2s; }
+.share-button:hover { background: #243748; transform: translateY(-1px); }
+.share-button:focus-visible, input:focus-visible, textarea:focus-visible, label:has(input:focus-visible) { outline: 3px solid #67bdd0; outline-offset: 3px; }
+footer { width: min(100%, 720px); margin: 20px auto 0; color: #64717d; font-size: .78rem; text-align: center; }
+@media (max-width: 480px) { .generator { border-radius: 22px; } .result-card { gap: 14px; padding: 19px; } .symbol-tile { width: 64px; border-radius: 14px; font-size: 1.5rem; } .result-card h2 { margin-bottom: 12px; font-size: 1.4rem; } .metrics { gap: 15px; } .feeling-options { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } }
